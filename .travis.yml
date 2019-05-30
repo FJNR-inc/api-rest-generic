@@ -11,11 +11,15 @@ branches:
     - /.*/
 
 before_script:
-  - npm install -g @angular/cli
+  - npm install
 
 script:
   - ng build --prod --aot
+  - npm run lint
   - ng test
+
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 env:
   global:
