@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "api-rest-generic-lib": {
+      "root": "projects/api-rest-generic-lib",
+      "sourceRoot": "projects/api-rest-generic-lib/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/api-rest-generic-lib/tsconfig.lib.json",
+            "project": "projects/api-rest-generic-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/api-rest-generic-lib/src/test.ts",
+            "tsConfig": "projects/api-rest-generic-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/api-rest-generic-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/api-rest-generic-lib/tsconfig.lib.json",
+              "projects/api-rest-generic-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "api-rest-generic"

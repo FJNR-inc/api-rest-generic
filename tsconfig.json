@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "api-rest-generic-lib": [
+        "dist/api-rest-generic-lib"
+      ],
+      "api-rest-generic-lib/*": [
+        "dist/api-rest-generic-lib/*"
+      ]
+    }
   }
 }
