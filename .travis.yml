@@ -11,7 +11,6 @@ branches:
     - /.*/
 
 before_script:
-  - ng analytics off
   - npm install -g @angular/cli
 
 script:
