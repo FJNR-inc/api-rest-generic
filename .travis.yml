@@ -11,8 +11,13 @@ branches:
     - /.*/
 
 before_script:
+  - ng analytics off
   - npm install -g @angular/cli
 
 script:
   - ng build --prod --aot
   - ng test
+
+env:
+  global:
+    - NG_CLI_ANALYTICS=ci
