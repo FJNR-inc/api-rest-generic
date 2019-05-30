@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { ApiRestGenericLibComponent } from './api-rest-generic-lib.component';
 
 @NgModule({
-  declarations: [ApiRestGenericLibComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [ApiRestGenericLibComponent]
+  exports: []
 })
 export class ApiRestGenericLibModule { }

@@ -24,9 +24,9 @@ before_script:
   - npm install
 
 script:
-  - ng build --prod --aot
   - npm run lint
-  - ng test
+  - ng build api-rest-generic-lib
+  - ng test api-rest-generic-lib
 
 after_success:
   - cat ./coverage/api-rest-generic-lib/lcov.info | ./node_modules/coveralls/bin/coveralls.js

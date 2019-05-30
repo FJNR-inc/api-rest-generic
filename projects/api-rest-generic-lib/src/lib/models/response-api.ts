@@ -1,6 +1,6 @@
-export class ResponseApi {
+export class ResponseApi<T> {
   count: number;
   next: any;
   previous: any;
-  results: any[];
+  results: T[];
 }

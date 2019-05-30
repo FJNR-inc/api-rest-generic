@@ -33,14 +33,14 @@ export class ApiRestGenericLibService <T> extends GlobalService {
     );
   }
 
-  list(): Observable<ResponseApi> {
+  list(): Observable<ResponseApi<T>> {
     return this.http.get<any>(
       this.url,
       {headers: this.getHeaders()}
     );
   }
 
-  search(searchFields: SearchField): Observable<ResponseApi> {
+  search(searchFields: SearchField): Observable<ResponseApi<T>> {
     const params: HttpParams = new HttpParams({
       fromObject: searchFields
     });
