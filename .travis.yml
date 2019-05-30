@@ -19,7 +19,7 @@ script:
   - ng test
 
 after_success:
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - cat ./coverage/api-rest-generic-lib/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 env:
   global:
