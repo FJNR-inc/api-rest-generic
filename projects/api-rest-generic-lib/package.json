@@ -1,5 +1,5 @@
 {
-  "name": "api-rest-generic-lib",
+  "name": "@fjnr/api-rest-generic-lib",
   "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
