@@ -1,6 +1,6 @@
 # ApiRestGenericLib
-[![Build Status](https://travis-ci.org/Jerome-Celle/api-rest-generic.svg?branch=master)](https://travis-ci.org/Jerome-Celle/api-rest-generic)
-[![Coverage Status](https://coveralls.io/repos/github/Jerome-Celle/api-rest-generic/badge.svg?branch=master)](https://coveralls.io/github/Jerome-Celle/api-rest-generic?branch=master)
+[![Build Status](https://travis-ci.com/FJNR-inc/api-rest-generic.svg?branch=master)](https://travis-ci.com/FJNR-inc/api-rest-generic)
+[![Coverage Status](https://coveralls.io/repos/github/FJNR-inc/api-rest-generic/badge.svg?branch=master)](https://coveralls.io/github/FJNR-inc/api-rest-generic?branch=master)
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
 
